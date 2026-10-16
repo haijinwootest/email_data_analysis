@@ -1,0 +1,168 @@
+{
+  "raw_clean_hash_equal": true,
+  "raw_clean_equal": true,
+  "master_raw_cols_exact": true,
+  "master_cols": [
+    "recency",
+    "history_segment",
+    "history",
+    "mens",
+    "womens",
+    "zip_code",
+    "newbie",
+    "channel",
+    "segment",
+    "visit",
+    "conversion",
+    "spend",
+    "email_assigned"
+  ],
+  "shape_before": [
+    64000,
+    12
+  ],
+  "shape_after": [
+    64000,
+    13
+  ],
+  "missing_before": 0,
+  "missing_after": 0,
+  "duplicates_before": 6562,
+  "duplicates_master_original_columns": 6562,
+  "duplicates_after_full": 6562,
+  "unmapped_assignment": 0,
+  "derived_mismatches": 0,
+  "all_rowvalues_matching": true,
+  "dist": {
+    "recency": {
+      "equal": true,
+      "mean_before": 5.763734375,
+      "mean_after": 5.763734375,
+      "sd_before": 3.507591612050416,
+      "sd_after": 3.507591612050416,
+      "min": 1.0,
+      "q25": 2.0,
+      "median": 6.0,
+      "q75": 9.0,
+      "max": 12.0
+    },
+    "history": {
+      "equal": true,
+      "mean_before": 242.08565578124998,
+      "mean_after": 242.08565578124998,
+      "sd_before": 256.15860829226364,
+      "sd_after": 256.15860829226364,
+      "min": 29.99,
+      "q25": 64.66,
+      "median": 158.11,
+      "q75": 325.65749999999997,
+      "max": 3345.93
+    },
+    "spend": {
+      "equal": true,
+      "mean_before": 1.0509082812500001,
+      "mean_after": 1.0509082812500001,
+      "sd_before": 15.036448116095249,
+      "sd_after": 15.036448116095249,
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 499.0
+    }
+  },
+  "group_equal": true,
+  "groups": [
+    {
+      "segment": "Mens E-Mail",
+      "rows": 21307,
+      "conv": 267,
+      "spend": 30311.69
+    },
+    {
+      "segment": "No E-Mail",
+      "rows": 21306,
+      "conv": 122,
+      "spend": 13908.33
+    },
+    {
+      "segment": "Womens E-Mail",
+      "rows": 21387,
+      "conv": 189,
+      "spend": 23038.11
+    }
+  ],
+  "numeric_total": {
+    "conversions": 578,
+    "spend": 67258.13
+  },
+  "derived_values": {
+    "0": 21306,
+    "1": 42694
+  },
+  "other_datasets": {
+    "q1_conversion_customer": {
+      "shape": [
+        64000,
+        3
+      ],
+      "value_match": true,
+      "missing": 0
+    },
+    "q2_email_type_customer": {
+      "shape": [
+        64000,
+        2
+      ],
+      "value_match": true,
+      "missing": 0
+    },
+    "q3_revenue_customer": {
+      "shape": [
+        64000,
+        4
+      ],
+      "value_match": true,
+      "missing": 0
+    },
+    "q1_assignment_groups": {
+      "shape": [
+        2,
+        4
+      ],
+      "key_equal": true,
+      "rows_equal": true,
+      "conv_equal": true,
+      "revenue_equal": true,
+      "total_rows": 64000,
+      "total_conversions": 578,
+      "total_spend": 67258.13
+    },
+    "q2_email_type_groups": {
+      "shape": [
+        3,
+        4
+      ],
+      "key_equal": true,
+      "rows_equal": true,
+      "conv_equal": true,
+      "revenue_equal": true,
+      "total_rows": 64000,
+      "total_conversions": 578,
+      "total_spend": 67258.13
+    },
+    "q3_revenue_groups": {
+      "shape": [
+        2,
+        4
+      ],
+      "key_equal": true,
+      "rows_equal": true,
+      "conv_equal": true,
+      "revenue_equal": true,
+      "total_rows": 64000,
+      "total_conversions": 578,
+      "total_spend": 67258.13
+    }
+  }
+}

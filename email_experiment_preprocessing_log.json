@@ -1,0 +1,171 @@
+{
+  "generated_at_utc": "2026-10-14T02:04:11.074721+00:00",
+  "decision": "Do not clean/transform; preserve raw observations under the latest approval",
+  "source_file": "Kevin_Hillstrom_MineThatData_E-MailAnalytics_DataMiningChallenge_2008.03.20.csv",
+  "output_file": "email_experiment_clean.csv",
+  "operations": [
+    {
+      "target": "all columns and rows",
+      "condition": "no deletion, imputation, recoding, winsorization, or type conversion approved",
+      "action": "no transformation; byte-exact copy to distinct file",
+      "deleted_rows": 0,
+      "modified_values": 0,
+      "created_columns": 0
+    }
+  ],
+  "before": {
+    "rows": 64000,
+    "columns": 12,
+    "column_names": [
+      "recency",
+      "history_segment",
+      "history",
+      "mens",
+      "womens",
+      "zip_code",
+      "newbie",
+      "channel",
+      "segment",
+      "visit",
+      "conversion",
+      "spend"
+    ],
+    "dtypes": {
+      "recency": "int64",
+      "history_segment": "object",
+      "history": "float64",
+      "mens": "int64",
+      "womens": "int64",
+      "zip_code": "object",
+      "newbie": "int64",
+      "channel": "object",
+      "segment": "object",
+      "visit": "int64",
+      "conversion": "int64",
+      "spend": "float64"
+    },
+    "missing_by_column": {
+      "recency": 0,
+      "history_segment": 0,
+      "history": 0,
+      "mens": 0,
+      "womens": 0,
+      "zip_code": 0,
+      "newbie": 0,
+      "channel": 0,
+      "segment": 0,
+      "visit": 0,
+      "conversion": 0,
+      "spend": 0
+    },
+    "duplicate_rows": 6562,
+    "zero_spend_rows": 63422,
+    "total_conversions": 578,
+    "total_spend": 67258.13,
+    "groups": {
+      "Mens E-Mail": {
+        "rows": 21307,
+        "conversions": 267,
+        "spend_sum": 30311.69,
+        "spend_mean": 1.4226165110057727
+      },
+      "No E-Mail": {
+        "rows": 21306,
+        "conversions": 122,
+        "spend_sum": 13908.33,
+        "spend_mean": 0.6527893551112363
+      },
+      "Womens E-Mail": {
+        "rows": 21387,
+        "conversions": 189,
+        "spend_sum": 23038.11,
+        "spend_mean": 1.0772015710478329
+      }
+    }
+  },
+  "after": {
+    "rows": 64000,
+    "columns": 12,
+    "column_names": [
+      "recency",
+      "history_segment",
+      "history",
+      "mens",
+      "womens",
+      "zip_code",
+      "newbie",
+      "channel",
+      "segment",
+      "visit",
+      "conversion",
+      "spend"
+    ],
+    "dtypes": {
+      "recency": "int64",
+      "history_segment": "object",
+      "history": "float64",
+      "mens": "int64",
+      "womens": "int64",
+      "zip_code": "object",
+      "newbie": "int64",
+      "channel": "object",
+      "segment": "object",
+      "visit": "int64",
+      "conversion": "int64",
+      "spend": "float64"
+    },
+    "missing_by_column": {
+      "recency": 0,
+      "history_segment": 0,
+      "history": 0,
+      "mens": 0,
+      "womens": 0,
+      "zip_code": 0,
+      "newbie": 0,
+      "channel": 0,
+      "segment": 0,
+      "visit": 0,
+      "conversion": 0,
+      "spend": 0
+    },
+    "duplicate_rows": 6562,
+    "zero_spend_rows": 63422,
+    "total_conversions": 578,
+    "total_spend": 67258.13,
+    "groups": {
+      "Mens E-Mail": {
+        "rows": 21307,
+        "conversions": 267,
+        "spend_sum": 30311.69,
+        "spend_mean": 1.4226165110057727
+      },
+      "No E-Mail": {
+        "rows": 21306,
+        "conversions": 122,
+        "spend_sum": 13908.33,
+        "spend_mean": 0.6527893551112363
+      },
+      "Womens E-Mail": {
+        "rows": 21387,
+        "conversions": 189,
+        "spend_sum": 23038.11,
+        "spend_mean": 1.0772015710478329
+      }
+    }
+  },
+  "checks": {
+    "original_unchanged": true,
+    "byte_for_byte_identical": true,
+    "dataframe_equal": true,
+    "schema_equal": true,
+    "group_aggregates_equal": true,
+    "all_profile_checks_equal": true
+  },
+  "source_sha256": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+  "output_sha256": "0e5893329d8b93cefecc571777672028290ab69865718020c78c7284f291aece",
+  "kpi_impact": "No change: all group denominators, conversions, and spend totals preserved",
+  "limitations": [
+    "Customer-level uniqueness cannot be proven without true customer ID",
+    "14-day window and randomization require source documentation"
+  ]
+}
